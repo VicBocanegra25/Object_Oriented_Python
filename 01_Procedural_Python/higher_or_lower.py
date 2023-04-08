@@ -42,7 +42,7 @@ def shuffle(deck_list_in):
     return deck_list_out
 
 
-def play_game(starting_deck_list, score, NCARDS):
+def play_game(starting_deck_list, score):
     """
     The play_game() function plays the card game a single time.
 
@@ -130,7 +130,7 @@ def main():
     score = 50
 
     while True:  # play multiple games
-        score = play_game(starting_deck_list, score, NCARDS)
+        score = play_game(starting_deck_list, score)
 
         # Checking if the user wants to continue playing
         go_again = input('To play again, press ENTER, or "q" to quit: ')
